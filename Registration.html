@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="app.css">
+</head>
+<body>
+    <div class="container">
+        <div class="flex-center text-center">
+            <div class="header">
+                <h3>Create Account</h3>
+            </div>
+            <div class="flex-column flex-center">
+                <form action="login.html" method="post">
+
+                    <div class="containerInput">
+                        <label for="userName" class="label">User Name</label>
+                        <input type="text" name="userName" id="userName">
+                        <span id="unSpan">your Name is Not Valid</span>
+                    </div>
+                    <div class="containerInput">
+                        <label for="userPassword" class="label">User Password</label>
+                        <input type="password" name="userPassword" id="userPassword">
+                        <span id="upSpan">you Password is Not Valid</span>
+
+                    </div>
+                    <div class="containerInput">
+                        <label for="userPasswordC" class="label">Password Confirmation</label>
+                        <input type="password" name="userPasswordC" id="userPasswordC">
+                        <span id="upcSpan">your Password is Not Match</span>
+
+                    </div>
+                    <div class="containerInput">
+                        <label for="userEmail" class="label">Email</label>
+                        <input type="email" name="userEmail" id="userEmail">
+                        <span id="ueSpan">your Email is Not Valid</span>
+
+                    </div>
+                    <div class="containerInput">
+                        <label class="labelGender">Gender</label>
+                        <div class="gender">
+                            <input class="radio" type="radio" name="gender" id="gender_male" required>
+                            <label for="gender_male" class="label">Male</label>
+                            <input class="radio" type="radio" name="gender" id="gender_female" required>
+                            <label for="gender_female" class="label">Female</label>
+                        </div>
+                    </div>
+                    <div class="containerInput buttons">
+                        <input type="submit" name="submit" id="submit" class="btn">
+                        <input type="reset" name="cancel" id="cancel" class="btn">
+                    </div>
+
+                </form>
+
+            </div>
+        </div>
+    </div>
+<script src="Registration.js"></script>
+</body>
+</html>
